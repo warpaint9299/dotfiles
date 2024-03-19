@@ -1,0 +1,49 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="$USER_HOME$/bin/node" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="VictorMono NFM Medium" />
+    <option name="fontScale" value="1.0" />
+    <option name="fontSize" value="18" />
+  </component>
+  <component name="ProjectPluginTrackerManager">
+    <trackers>
+      <map>
+        <entry key="2do5tIRur4Y8TyQAHGrE3aOap4p">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileChooser.ShowPath" value="true" />
+    <property name="InstalledPluginsSearchHistory" value="font&#10;fon" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="SettingsSearchHistory" value="font" />
+    <property name="appcds.runOnSecondStart" value="CL-211.7628.27-46ccf78929dee9c4594f1c179e58051e2647bd8084ba289b4199b9ff9185a410" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="clion.initialConfigPerformed" value="true" />
+    <property name="experimentalFeature.editor.reader.mode" value="false" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/.config/JetBrains/ide-eval-resetter-2.3.5.zip&#10;/home/warpaint/.config/JetBrains/mac-native-jetbrains.jar" />
+    <property name="file.gist.reindex.count" value="11" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="fileTypeDetectors" value="com.intellij.database.vfs.DbStorageFileType$Detector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector:com.jetbrains.cidr.lang.OCHeaderFileTypeDetector" />
+    <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
+    <property name="ide.updates.previous.build.number" value="CL-211.7628.27" />
+    <property name="lastSeenTip" value="neue-NewCMakeProject.html" />
+    <property name="lastTimeTipsWereShown" value="1710662205107" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.config/JetBrains/ide-eval-resetter-2.3.5.zip" />
+    <property name="log.trace.categories" value="#com.jetbrains.rdserver.requests&#10;#com.jetbrains.rd.ide.document&#10;#com.jetbrains.rdserver.document&#10;#com.jetbrains.rdserver.editors&#10;#com.jetbrains.rdserver.actions" />
+    <property name="plugins.preselection.path" value="$USER_HOME$/.config/JetBrains" />
+    <property name="seenTips" value="neue-NewCMakeProject.html" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="4.2.2" />
+  </component>
+  <component name="ToolbarSettingsService">
+    <option name="NEW_TOOLBAR_SETTINGS" value="OLD_TOOLBAR_WITH_NAVBAR_SEPARATE" />
+  </component>
+</application>
