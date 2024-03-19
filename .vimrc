@@ -5,6 +5,8 @@ Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -85,7 +87,6 @@ nnoremap <silent> <C-UP> :let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:topleft sp
 nnoremap <silent> <C-DOWN> :let @r=line(".")<CR>:let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:botright split <C-r>p<CR>:<C-r>r<CR>:normal <C-r>c\|<CR>
 nnoremap <silent> <C-LEFT> :let @r=line(".")<CR>:let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:vertical topleft split <C-r>p<CR>:<C-r>r<CR>:normal <C-r>c\|<CR>
 nnoremap <silent> <C-RIGHT> :let @r=line(".")<CR>:let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:vertical botright split <C-r>p<CR>:<C-r>r<CR>:normal <C-r>c\|<CR>
-
 nnoremap <silent> <S-UP> :topleft split<CR>
 nnoremap <silent> <S-DOWN> :botright split<CR>
 nnoremap <silent> <S-LEFT> :vertical topleft split<CR>
@@ -126,3 +127,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='tomorrow'
+

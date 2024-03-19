@@ -102,9 +102,9 @@ export ARCHFLAGS="-arch x86_64"
 #
 alias zshconfig='mate ~/.zshrc'
 alias ohmyzsh='mate ~/.oh-my-zsh'
-alias vim='nvim'
-alias vi='nvim'
-alias nano='nvim'
+alias vim='vim'
+alias nvim='nvim'
+alias vi='vim'
 
 export DOCKER_HOST=unix:///run/user/1000/docker.sock
 export _JAVA_AWT_WM_NONREPARENTING=1
