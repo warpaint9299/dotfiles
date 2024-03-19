@@ -70,13 +70,30 @@ au bufreadpost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " :cnoremap 命令模式映射
 
 "noremap
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-inoremap jk <esc>
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <LEFT> <NOP>
+inoremap <RIGHT> <NOP>
+inoremap jk <ESC>
 
-nmap tt :NERDTreeToggle<CR>
+nnoremap <silent> <A-UP> :horizontal resize +5<CR>
+nnoremap <silent> <A-DOWN> :horizontal resize -5<CR>
+nnoremap <silent> <A-RIGHT> :vertical resize -10<CR>
+nnoremap <silent> <A-LEFT> :vertical resize +10<CR>
+
+nnoremap <silent> <C-UP> :let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:topleft split <C-r>p<CR>:<C-r>r<CR>:normal <C-r>c\|<CR>
+nnoremap <silent> <C-DOWN> :let @r=line(".")<CR>:let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:botright split <C-r>p<CR>:<C-r>r<CR>:normal <C-r>c\|<CR>
+nnoremap <silent> <C-LEFT> :let @r=line(".")<CR>:let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:vertical topleft split <C-r>p<CR>:<C-r>r<CR>:normal <C-r>c\|<CR>
+nnoremap <silent> <C-RIGHT> :let @r=line(".")<CR>:let @c=col(".")<CR>:let @p=@%<CR>:close<CR>:vertical botright split <C-r>p<CR>:<C-r>r<CR>:normal <C-r>c\|<CR>
+
+nnoremap <silent> <S-UP> :topleft split<CR>
+nnoremap <silent> <S-DOWN> :botright split<CR>
+nnoremap <silent> <S-LEFT> :vertical topleft split<CR>
+nnoremap <silent> <S-RIGHT> :vertical botright split<CR>
+nnoremap <silent> <S-c> :close<CR>
+vnoremap <C-c> 'y"*'
+
+nnoremap tt :NERDTreeToggle<CR>
 let NERDTreeWinSize=32
 let NERDTreeWinPos="right"
 let NERDTreeShowHidden=0
