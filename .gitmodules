@@ -1,0 +1,12 @@
+[submodule "wallpaper"]
+	path = wallpaper
+	url = git@github.com:warpaint9299/wallpaper.git
+[submodule ".wallpaper"]
+	path = .wallpaper
+	url = git@github.com:warpaint9299/wallpaper.git
+[submodule ".dwm"]
+	path = .dwm
+	url = git@github.com:warpaint9299/dwm-6.4.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:warpaint9299/nvim-0.9.git
