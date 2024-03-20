@@ -16,3 +16,6 @@
 [submodule ".archlinux"]
 	path = .archlinux
 	url = git@github.com:warpaint9299/archlinux.git
+[submodule ".learning"]
+	path = .learning
+	url = git@github.com:warpaint9299/learning.git
