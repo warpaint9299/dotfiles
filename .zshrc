@@ -27,6 +27,7 @@ eval "$(zoxide init zsh)"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
+zstyle ':omz:update' mode disabled
 zstyle ':fzf-tab:*' fzf-command
 zstyle ':fzf-tab:*' fzf-bindings 'space:accept'
 # Uncomment the following line if pasting URLs and other text is messed up.
