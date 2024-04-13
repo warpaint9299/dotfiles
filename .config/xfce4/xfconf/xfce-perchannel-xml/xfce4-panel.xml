@@ -45,6 +45,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="fcitx5 tray window"/>
       </property>
       <property name="known-items" type="array">
         <value type="string" value="vlc"/>
@@ -67,7 +68,7 @@
       <property name="rec-indicator-persistent" type="bool" value="false"/>
       <property name="enable-wnck" type="bool" value="false"/>
       <property name="multimedia-keys-to-all" type="bool" value="false"/>
-      <property name="known-players" type="string" value=";Chrome;vlc"/>
+      <property name="known-players" type="string" value=";Chrome;firefox;vlc"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
