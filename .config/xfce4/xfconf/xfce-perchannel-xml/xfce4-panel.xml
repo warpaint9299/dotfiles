@@ -15,6 +15,7 @@
         <value type="int" value="1"/>
         <value type="int" value="12"/>
         <value type="int" value="3"/>
+        <value type="int" value="2"/>
         <value type="int" value="6"/>
         <value type="int" value="5"/>
         <value type="int" value="8"/>
@@ -23,7 +24,7 @@
       </property>
       <property name="background-style" type="uint" value="1"/>
       <property name="mode" type="uint" value="0"/>
-      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="2"/>
       <property name="enable-struts" type="bool" value="true"/>
       <property name="background-rgba" type="array">
         <value type="double" value="0.72156862745098049"/>
@@ -32,7 +33,7 @@
         <value type="double" value="1"/>
       </property>
       <property name="span-monitors" type="bool" value="false"/>
-      <property name="output-name" type="string" value="Primary"/>
+      <property name="output-name" type="string" value="eDP"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -50,6 +51,7 @@
         <value type="string" value="fcitx5 tray window"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="vlc"/>
         <value type="string" value="yesplaymusic1"/>
         <value type="string" value="chrome_status_icon_1"/>
@@ -86,6 +88,21 @@
     <property name="plugin-1" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-2" type="string" value="xfce4-notes-plugin"/>
+    <property name="notes" type="empty">
+      <property name="global" type="empty">
+        <property name="version" type="string" value="1.11.0"/>
+        <property name="font-description" type="string" value="VictorMono Nerd Font Mono Bold 16"/>
+        <property name="tabs-position" type="int" value="0"/>
+        <property name="background-color" type="string" value="#FCF66F"/>
+      </property>
+      <property name="new-window" type="empty">
+        <property name="sticky" type="bool" value="true"/>
+        <property name="always-on-top" type="bool" value="true"/>
+        <property name="width" type="int" value="300"/>
+        <property name="height" type="int" value="375"/>
+      </property>
     </property>
   </property>
 </channel>

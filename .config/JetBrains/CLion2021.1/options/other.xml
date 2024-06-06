@@ -24,12 +24,12 @@
     <property name="NonModalCommitCustomization.IsApplied" value="true" />
     <property name="PluginConfigurable.selectionTab" value="1" />
     <property name="SettingsSearchHistory" value="font" />
-    <property name="appcds.runOnSecondStart" value="CL-211.7628.27-46ccf78929dee9c4594f1c179e58051e2647bd8084ba289b4199b9ff9185a410" />
+    <property name="appcds.runOnSecondStart" value="CL-211.7628.27-89b61a953075ef0bf863f288a545e51e395b358106cd435b9ee6d1e0079ad8dc" />
     <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
     <property name="clion.initialConfigPerformed" value="true" />
     <property name="experimentalFeature.editor.reader.mode" value="false" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/.config/JetBrains/ide-eval-resetter-2.3.5.zip&#10;/home/warpaint/.config/JetBrains/mac-native-jetbrains.jar" />
-    <property name="file.gist.reindex.count" value="11" />
+    <property name="file.gist.reindex.count" value="14" />
     <property name="fileTypeChangedCounter" value="1" />
     <property name="fileTypeDetectors" value="com.intellij.database.vfs.DbStorageFileType$Detector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector:com.jetbrains.cidr.lang.OCHeaderFileTypeDetector" />
     <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
