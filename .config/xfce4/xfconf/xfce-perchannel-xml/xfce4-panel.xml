@@ -16,6 +16,7 @@
         <value type="int" value="12"/>
         <value type="int" value="3"/>
         <value type="int" value="2"/>
+        <value type="int" value="4"/>
         <value type="int" value="6"/>
         <value type="int" value="5"/>
         <value type="int" value="8"/>
@@ -95,7 +96,7 @@
         <property name="version" type="string" value="1.11.0"/>
         <property name="font-description" type="string" value="VictorMono Nerd Font Mono Bold 16"/>
         <property name="tabs-position" type="int" value="0"/>
-        <property name="background-color" type="string" value="#FCF66F"/>
+        <property name="background-color" type="string" value="#b8b8bbbb2626"/>
       </property>
       <property name="new-window" type="empty">
         <property name="sticky" type="bool" value="true"/>
@@ -104,5 +105,6 @@
         <property name="height" type="int" value="375"/>
       </property>
     </property>
+    <property name="plugin-4" type="string" value="wavelan"/>
   </property>
 </channel>

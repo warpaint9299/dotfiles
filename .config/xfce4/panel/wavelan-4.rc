@@ -1,0 +1,8 @@
+Interface=wlan0
+Autohide=true
+AutohideMissing=true
+SignalColors=true
+ShowIcon=true
+ShowBar=true
+Command=st -e nmtui
+
