@@ -105,8 +105,9 @@ alias zshconfig='mate ~/.zshrc'
 alias ohmyzsh='mate ~/.oh-my-zsh'
 alias vim='nvim'
 alias vi='nvim'
+alias docker='sudo docker'
 
-export DOCKER_HOST=unix:///run/user/1000/docker.sock
+# export DOCKER_HOST=unix:///run/user/1000/docker.sock
 export _JAVA_AWT_WM_NONREPARENTING=1
 export EDITOR=nvim
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh

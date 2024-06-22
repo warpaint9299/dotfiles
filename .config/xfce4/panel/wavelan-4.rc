@@ -1,6 +1,6 @@
 Interface=wlan0
-Autohide=true
-AutohideMissing=true
+Autohide=false
+AutohideMissing=false
 SignalColors=true
 ShowIcon=true
 ShowBar=true
