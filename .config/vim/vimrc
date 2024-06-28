@@ -1,0 +1,52 @@
+syntax enable
+colorscheme torte
+set cursorline
+set cursorcolumn
+let mapleader = " "
+
+inoremap jk <Esc>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+inoremap <C-l> <RIGHT>
+nnoremap <C-s> :w<CR>
+nnoremap <C-UP> :horizontal resize +5<CR>
+nnoremap <C-DOWN> :horizontal resize -5<CR>
+nnoremap <C-LEFT> :vertical resize +10<CR>
+nnoremap <C-RIGHT> :vertical resize -10<CR>
+nnoremap <S-c> :close<CR>
+
+set foldclose=all
+set relativenumber
+set showcmd
+set splitright
+set splitbelow
+set laststatus=0
+set ignorecase
+set nohlsearch
+set encoding=utf-8
+set shiftwidth=4
+set tabstop=4
+set ruler
+set history=10000
+set list
+set listchars=tab:>−,trail:−
+set backup
+set backupext=.bak
+set patchmode=.orig
+set textwidth=80
+set autoindent
+set fileformats=unix,dos,mac
+set noswapfile
+set foldlevel=3
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
+" auto load view of folds
+autocmd BufWritePre * mkview
+autocmd BufReadPost * loadview
