@@ -1,4 +1,7 @@
 syntax enable
+filetype on
+filetype plugin on
+filetype indent on
 colorscheme torte
 set cursorline
 set cursorcolumn
@@ -17,6 +20,14 @@ nnoremap <C-LEFT> :vertical resize +10<CR>
 nnoremap <C-RIGHT> :vertical resize -10<CR>
 nnoremap <S-c> :close<CR>
 
+if !isdirectory($HOME . '/.local/share/vim/view')
+	call mkdir($HOME . '/.local/share/vim/view', 'p')
+endif
+
+if !isdirectory($HOME . '/.local/share/vim/backup')
+	call mkdir($HOME . '/.local/share/vim/backup', 'p')
+endif
+
 set foldclose=all
 set relativenumber
 set showcmd
@@ -29,10 +40,11 @@ set encoding=utf-8
 set shiftwidth=4
 set tabstop=4
 set ruler
-set history=10000
+set history=1000
 set list
 set listchars=tab:>−,trail:−
 set backup
+set backupdir=$HOME/.local/share/vim/backup//
 set backupext=.bak
 set patchmode=.orig
 set textwidth=80
@@ -40,6 +52,10 @@ set autoindent
 set fileformats=unix,dos,mac
 set noswapfile
 set foldlevel=3
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -48,5 +64,7 @@ autocmd BufReadPost *
      \ endif
 
 " auto load view of folds
-autocmd BufWritePre * mkview
+autocmd BufWritePre *  mkview
 autocmd BufReadPost * loadview
+
+set viewdir=$HOME/.local/share/vim/view
