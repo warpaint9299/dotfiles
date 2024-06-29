@@ -43,13 +43,12 @@ set tabstop=4
 set ruler
 set nowrap
 set history=1000
-set list
-set listchars=tab:>−,trail:−
 set backup
 set backupdir=$HOME/.local/share/vim/backup//
 set backupext=.bak
 set textwidth=80
 set autoindent
+set smartindent
 set fileformats=unix,dos,mac
 set noswapfile
 set foldlevel=3
@@ -58,8 +57,8 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set clipboard+=unnamedplus
 set virtualedit=
-set fileencodings=ucs-bom,utf-8,gb18030,cp936,latin1
-set foldmethod=syntax
+set fileencodings=ucs-bom,utf-8,gb18030,cp936,latin1"
+set foldmethod=manual
 set linebreak
 set showmatch
 set display=truncate

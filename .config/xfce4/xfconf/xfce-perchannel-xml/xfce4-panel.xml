@@ -102,8 +102,8 @@
       <property name="new-window" type="empty">
         <property name="sticky" type="bool" value="true"/>
         <property name="always-on-top" type="bool" value="true"/>
-        <property name="width" type="int" value="300"/>
-        <property name="height" type="int" value="375"/>
+        <property name="width" type="int" value="240"/>
+        <property name="height" type="int" value="300"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="wavelan"/>
