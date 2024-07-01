@@ -91,7 +91,6 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
-    <property name="plugin-2" type="string" value="xfce4-notes-plugin"/>
     <property name="notes" type="empty">
       <property name="global" type="empty">
         <property name="version" type="string" value="1.11.0"/>
@@ -100,12 +99,13 @@
         <property name="background-color" type="string" value="#b8b8bbbb2626"/>
       </property>
       <property name="new-window" type="empty">
-        <property name="sticky" type="bool" value="true"/>
-        <property name="always-on-top" type="bool" value="true"/>
-        <property name="width" type="int" value="240"/>
-        <property name="height" type="int" value="300"/>
+        <property name="sticky" type="bool" value="false"/>
+        <property name="always-on-top" type="bool" value="false"/>
+        <property name="width" type="int" value="270"/>
+        <property name="height" type="int" value="337"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="wavelan"/>
+    <property name="plugin-2" type="string" value="xfce4-notes-plugin"/>
   </property>
 </channel>
