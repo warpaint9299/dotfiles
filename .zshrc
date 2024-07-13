@@ -106,7 +106,7 @@ export ARCHFLAGS="-arch x86_64"
 #
 alias zshconfig='mate ~/.zshrc'
 alias ohmyzsh='mate ~/.oh-my-zsh'
-# alias vim='nvim'
+alias vim='nvim'
 alias vi='nvim'
 alias docker='sudo docker'
 

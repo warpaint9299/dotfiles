@@ -7,7 +7,7 @@ if !isdirectory($XDG_DATA_HOME . '/vim/backup')
 endif
 
 " set patchmode=.orig
-set viewdir=$XDG_DATA_HOME/vim/view
+set viewdir=$XDG_DATA_HOME/vim/view//
 set backupdir=$XDG_DATA_HOME/vim/backup//
 set backupext=.bak
 set relativenumber
@@ -19,6 +19,7 @@ set ignorecase
 set nohlsearch
 set encoding=utf-8
 set shiftwidth=4
+set softtabstop=4
 set tabstop=4
 set ruler
 set nowrap
@@ -44,7 +45,6 @@ set guioptions+=b
 set ambiwidth=double
 set backspace=2
 set foldclose=all
-set softtabstop=4
 set expandtab
 set cursorline
 set cursorcolumn

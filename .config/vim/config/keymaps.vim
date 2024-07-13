@@ -24,4 +24,4 @@ nnoremap <silent> <C-LEFT> :vertical resize +10<CR>
 nnoremap <silent> <C-RIGHT> :vertical resize -10<CR>
 nnoremap <silent> <S-c> :close<CR>
 nnoremap <silent> <F2> :set relativenumber! number!<CR>
-nnoremap <silent> no :set hlsearch!<CR>
+nnoremap <silent> <leader>no :set hlsearch!<CR>

@@ -85,7 +85,7 @@
       <property name="digital-date-format" type="string" value="%A, %B %d"/>
       <property name="digital-date-font" type="string" value="VictorMono Nerd Font Propo Bold 11"/>
       <property name="digital-time-font" type="string" value="VictorMono Nerd Font Propo Bold 11"/>
-      <property name="digital-time-format" type="string" value="%I:%M %p"/>
+      <property name="digital-time-format" type="string" value="%H:%M %p"/>
     </property>
     <property name="plugin-1" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
