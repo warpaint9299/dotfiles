@@ -16,6 +16,8 @@
         <value type="int" value="12"/>
         <value type="int" value="3"/>
         <value type="int" value="2"/>
+        <value type="int" value="11"/>
+        <value type="int" value="7"/>
         <value type="int" value="4"/>
         <value type="int" value="6"/>
         <value type="int" value="5"/>
@@ -94,18 +96,27 @@
     <property name="notes" type="empty">
       <property name="global" type="empty">
         <property name="version" type="string" value="1.11.0"/>
-        <property name="font-description" type="string" value="VictorMono Nerd Font Mono Bold 16"/>
+        <property name="font-description" type="string" value="VictorMono Nerd Font Mono Bold 18"/>
         <property name="tabs-position" type="int" value="0"/>
         <property name="background-color" type="string" value="#b8b8bbbb2626"/>
       </property>
       <property name="new-window" type="empty">
-        <property name="sticky" type="bool" value="false"/>
+        <property name="sticky" type="bool" value="true"/>
         <property name="always-on-top" type="bool" value="false"/>
-        <property name="width" type="int" value="270"/>
-        <property name="height" type="int" value="337"/>
+        <property name="width" type="int" value="300"/>
+        <property name="height" type="int" value="375"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="wavelan"/>
     <property name="plugin-2" type="string" value="xfce4-notes-plugin"/>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17213044731.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
   </property>
 </channel>
