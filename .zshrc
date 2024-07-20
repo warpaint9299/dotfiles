@@ -122,4 +122,5 @@ setxkbmap -option ctrl:nocaps
 POWERLINE_PATH="short"
 POWERLINE_DISABLE_RPROMPT="true"
 POWERLINE_NO_BLANK_LINE=""
+. "$HOME/.cargo/env"
 source $ZSH/oh-my-zsh.sh

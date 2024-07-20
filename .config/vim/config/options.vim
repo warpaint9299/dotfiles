@@ -48,6 +48,7 @@ set foldclose=all
 set expandtab
 set cursorline
 set cursorcolumn
+set belloff=all
 syntax enable
 filetype on
 filetype plugin on
