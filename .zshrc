@@ -123,4 +123,5 @@ POWERLINE_PATH="short"
 POWERLINE_DISABLE_RPROMPT="true"
 POWERLINE_NO_BLANK_LINE=""
 . "$HOME/.cargo/env"
+cowsay "Book! Book! Book!"
 source $ZSH/oh-my-zsh.sh
