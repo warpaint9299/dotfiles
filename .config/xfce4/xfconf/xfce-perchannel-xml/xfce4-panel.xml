@@ -17,11 +17,10 @@
         <value type="int" value="1"/>
         <value type="int" value="12"/>
         <value type="int" value="3"/>
-        <value type="int" value="2"/>
         <value type="int" value="11"/>
-        <value type="int" value="4"/>
         <value type="int" value="6"/>
         <value type="int" value="5"/>
+        <value type="int" value="4"/>
         <value type="int" value="8"/>
         <value type="int" value="10"/>
         <value type="int" value="9"/>
@@ -52,10 +51,12 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="superproductivity"/>
         <value type="string" value="yesplaymusic"/>
         <value type="string" value="fcitx5 tray window"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="KDocker"/>
         <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="vlc"/>
         <value type="string" value="yesplaymusic1"/>
@@ -100,16 +101,16 @@
         <property name="font-description" type="string" value="VictorMono Nerd Font Mono Bold 18"/>
         <property name="tabs-position" type="int" value="0"/>
         <property name="background-color" type="string" value="#b8b8bbbb2626"/>
+        <property name="skip-taskbar-hint" type="bool" value="false"/>
       </property>
       <property name="new-window" type="empty">
-        <property name="sticky" type="bool" value="true"/>
+        <property name="sticky" type="bool" value="false"/>
         <property name="always-on-top" type="bool" value="false"/>
         <property name="width" type="int" value="300"/>
         <property name="height" type="int" value="375"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="wavelan"/>
-    <property name="plugin-2" type="string" value="xfce4-notes-plugin"/>
     <property name="plugin-7" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17213044731.desktop"/>

@@ -16,6 +16,7 @@
       <value type="string" value="Input Method"/>
       <value type="string" value="Pinyin"/>
       <value type="string" value="Simplified and Traditional Chinese Translation"/>
+      <value type="string" value="superProductivity"/>
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="Xfce4-notifyd settings"/>
     </property>
