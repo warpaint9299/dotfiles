@@ -14,7 +14,8 @@ ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerline"
+ZSH_THEME="refined"
+# ZSH_THEME="powerline"
 eval "$(zoxide init zsh)"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -123,5 +124,5 @@ POWERLINE_PATH="short"
 POWERLINE_DISABLE_RPROMPT="true"
 POWERLINE_NO_BLANK_LINE=""
 . "$HOME/.cargo/env"
-cowsay "Book! Book! Book!"
+neofetch --ascii_distro OpenBSD_small
 source $ZSH/oh-my-zsh.sh

@@ -1,2 +1,6 @@
+! - 22,32,43,64,86,171  - Regular
+! - 26,39,52,77,103,205 - Large
+! - 32,48,64,96,128,256 - Extra Large
+! Xcursor.size: 16 20 22 24 28 32 40 48 56 64 72 80 88 96
 Xcursor.theme: macOS
-Xcursor.size: 32
+Xcursor.size: 28
