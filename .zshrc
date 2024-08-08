@@ -76,6 +76,7 @@ zstyle ':fzf-tab:*' fzf-bindings 'space:accept'
 plugins=(
   extract
   fzf-tab
+  zsh-lsd
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
