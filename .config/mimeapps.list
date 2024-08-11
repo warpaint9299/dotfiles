@@ -1,0 +1,22 @@
+[Default Applications]
+text/html=firefox-esr.desktop
+x-scheme-handler/http=firefox-esr.desktop
+x-scheme-handler/https=firefox-esr.desktop
+x-scheme-handler/about=firefox-esr.desktop
+x-scheme-handler/unknown=firefox-esr.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_opt_dbeaver-ee_.desktop
+x-scheme-handler/chrome=firefox-esr.desktop
+application/x-extension-htm=firefox-esr.desktop
+application/x-extension-html=firefox-esr.desktop
+application/x-extension-shtml=firefox-esr.desktop
+application/xhtml+xml=firefox-esr.desktop
+application/x-extension-xhtml=firefox-esr.desktop
+application/x-extension-xht=firefox-esr.desktop
+x-scheme-handler/mailto=firefox-esr.desktop
+
+[Added Associations]
+text/plain=mousepad.desktop;
+x-scheme-handler/http=xfce4-web-browser.desktop;firefox-esr.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;firefox-esr.desktop;
+application/java-archive=org.kde.ark.desktop;
+text/html=firefox-esr.desktop;
