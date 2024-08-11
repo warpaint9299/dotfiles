@@ -13,10 +13,19 @@ application/xhtml+xml=firefox-esr.desktop
 application/x-extension-xhtml=firefox-esr.desktop
 application/x-extension-xht=firefox-esr.desktop
 x-scheme-handler/mailto=firefox-esr.desktop
+image/jpeg=feh.desktop
+application/pdf=firefox-esr.desktop
+application/xml=org.xfce.mousepad.desktop
+text/plain=org.xfce.mousepad.desktop
+application/x-shellscript=org.xfce.mousepad.desktop
 
 [Added Associations]
-text/plain=mousepad.desktop;
+text/plain=mousepad.desktop;org.xfce.mousepad.desktop;
 x-scheme-handler/http=xfce4-web-browser.desktop;firefox-esr.desktop;
 x-scheme-handler/https=xfce4-web-browser.desktop;firefox-esr.desktop;
 application/java-archive=org.kde.ark.desktop;
 text/html=firefox-esr.desktop;
+image/jpeg=feh.desktop;
+application/pdf=firefox-esr.desktop;
+application/xml=org.xfce.mousepad.desktop;
+application/x-shellscript=org.xfce.mousepad.desktop;
