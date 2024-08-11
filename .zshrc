@@ -120,6 +120,8 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+# mv ./^folder1 folder1  =>  move all of directory or file except one 
+setopt extended_glob
 setxkbmap -option ctrl:nocaps
 POWERLINE_PATH="short"
 POWERLINE_DISABLE_RPROMPT="true"
