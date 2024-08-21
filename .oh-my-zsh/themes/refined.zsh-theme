@@ -58,7 +58,18 @@ cmd_exec_time() {
     local stop=`date +%s`
     local start=${cmd_timestamp:-$stop}
     let local elapsed=$stop-$start
-    [ $elapsed -gt 5 ] && echo ${elapsed}s
+	if [[ $(($elapsed / 1200 )) -gt 0 ]]; then
+		let local hour=$(( ${elapsed} / 1200 ))
+		let local minute=$(( ${elapsed} % 1200 / 60 ))
+		let local second=$(( ${elapsed} % 1200 % 60 ))
+		echo ${hour}h,${minute}m${second}s
+	elif [[ $(($elapsed / 60 )) -gt 0 ]]; then
+		let local minute=$(( ${elapsed} / 60 ))
+		let local second=$(( ${elapsed} % 60 ))
+		echo ${minute}m${second}s
+	elif [[ $elapsed -gt 5 ]]; then
+		echo ${elapsed}s
+	fi
 }
 
 # Get the initial timestamp for cmd_exec_time
