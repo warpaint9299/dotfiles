@@ -1,5 +1,5 @@
 import = [
-    "/usr/share/alacritty/themes/tokyo-night.toml"
+    "/usr/share/alacritty/themes/pastel_dark.toml"
 ]
 
 [env]
@@ -10,7 +10,7 @@ WINIT_XIM_STYLE = "onscreen"  # let input method following cursor
 
 [window]
 # background opacity
-opacity = 1.0
+opacity = 0.75
 dynamic_title = true
 blur = true
 resize_increments = true
