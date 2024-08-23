@@ -71,9 +71,9 @@ cmd_exec_time() {
 		let local minute=$(( ${elapsed} / 60 ))
 		let local second=$(( ${elapsed} % 60 ))
 		if [[ ${second} -ge 10 ]]; then
-			echo ${hour}h,${minute}m${second}s
+			echo ${minute}m${second}s
 		else
-			echo ${hour}h,${minute}m0${second}s
+			echo ${minute}m0${second}s
 		fi
 	elif [[ $elapsed -gt 5 ]]; then
 		echo ${elapsed}s
