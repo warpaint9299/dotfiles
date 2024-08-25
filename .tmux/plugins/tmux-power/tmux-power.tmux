@@ -68,18 +68,18 @@ case $TC in
         ;;
 esac
 
-G01=#080808 #232
-G02=#121212 #233
-G03=#1c1c1c #234
-G04=#262626 #235
-G05=#303030 #236
-G06=#3a3a3a #237
-G07=#444444 #238
-G08=#4e4e4e #239
-G09=#585858 #240
-G10=#626262 #241
-G11=#6c6c6c #242
-G12=#767676 #243
+G01=#0e0e0e #0e0e0e
+G02=#0e0e0e #0e0e0e
+G03=#0e0e0e #0e0e0e
+G04=#0e0e0e #0e0e0e
+G05=#b8bb26 #0e0e0e
+G06=#143e4d #0e0e0e
+G07=#0e0e0e #0e0e0e
+G08=#0e0e0e #0e0e0e
+G09=#0e0e0e #0e0e0e
+G10=#0e0e0e #0e0e0e
+G11=#0e0e0e #0e0e0e
+G12=#0e0e0e #0e0e0e
 
 FG="#b8bb26"
 BG="#143e4d"
@@ -105,9 +105,9 @@ tmux_set @prefix_highlight_output_suffix "#[fg=$TC]#[bg=$BG]$rarrow"
 # Left side of status bar
 tmux_set status-left-bg "$G04"
 tmux_set status-left-fg "$G12"
-tmux_set status-left-length 150
+tmux_set status-left-length 200
 user=$(whoami)
-LS="#[fg=$G04,bg=$TC,bold] $user_icon $user@#h #[fg=$TC,bg=$G06,nobold]$rarrow#[fg=$TC,bg=$G06] $session_icon #S "
+LS="#[fg=$G04,bg=$TC,bold] $user_icon $user #[fg=$TC,bg=$G06,nobold]$rarrow#[fg=$TC,bg=$G06] $session_icon #S "
 if "$show_upload_speed"; then
     LS="$LS#[fg=$G06,bg=$G05]$rarrow#[fg=$TC,bg=$G05] $upload_speed_icon #{upload_speed} #[fg=$G05,bg=$BG]$rarrow"
 else
@@ -121,10 +121,10 @@ tmux_set status-left "$LS"
 # Right side of status bar
 tmux_set status-right-bg "$BG"
 tmux_set status-right-fg "$G12"
-tmux_set status-right-length 150
+tmux_set status-right-length 200
 RS="#[fg=$G06]$larrow#[fg=$TC,bg=$G06] $time_icon $time_format #[fg=$TC,bg=$G06]$larrow#[fg=$G04,bg=$TC] $date_icon $date_format "
 if "$show_download_speed"; then
-    RS="#[fg=$G05,bg=$BG]$larrow#[fg=$TC,bg=$G05] $download_speed_icon #{download_speed} $RS"
+    RS="#[fg=$FG,bg=$BG]$larrow#[fg=$BG,bg=$G05] $download_speed_icon #{download_speed} $RS"
 fi
 if "$show_web_reachable"; then
     RS=" #{web_reachable_status} $RS"
