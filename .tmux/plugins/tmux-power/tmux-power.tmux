@@ -27,62 +27,17 @@ session_icon="$(tmux_get '@tmux_power_session_icon' '')"
 user_icon="$(tmux_get '@tmux_power_user_icon' '')"
 time_icon="$(tmux_get '@tmux_power_time_icon' '')"
 date_icon="$(tmux_get '@tmux_power_date_icon' '')"
-show_upload_speed="$(tmux_get @tmux_power_show_upload_speed false)"
-show_download_speed="$(tmux_get @tmux_power_show_download_speed false)"
+show_network_speed="$(tmux_get @tmux_power_show_network_speed false)"
 show_web_reachable="$(tmux_get @tmux_power_show_web_reachable false)"
 prefix_highlight_pos=$(tmux_get @tmux_power_prefix_highlight_pos)
 time_format=$(tmux_get @tmux_power_time_format '%T')
 date_format=$(tmux_get @tmux_power_date_format '%F')
-# short for Theme-Colour
-TC=$(tmux_get '@tmux_power_theme' 'gold')
-case $TC in
-    'gold' )
-        TC='#ffb86c'
-        ;;
-    'redwine' )
-        TC='#b34a47'
-        ;;
-    'moon' )
-        TC='#00abab'
-        ;;
-    'forest' )
-        TC='#228b22'
-        ;;
-    'violet' )
-        TC='#9370db'
-        ;;
-    'snow' )
-        TC='#fffafa'
-        ;;
-    'coral' )
-        TC='#ff7f50'
-        ;;
-    'sky' )
-        TC='#87ceeb'
-        ;;
-    'everforest' )
-        TC='#a7c080'
-        ;;
-    'default' ) # Useful when your term changes colour dynamically (e.g. pywal)
-        TC='colour3'
-        ;;
-esac
 
-G01=#0e0e0e #0e0e0e
-G02=#0e0e0e #0e0e0e
-G03=#0e0e0e #0e0e0e
-G04=#0e0e0e #0e0e0e
-G05=#b8bb26 #0e0e0e
-G06=#143e4d #0e0e0e
-G07=#0e0e0e #0e0e0e
-G08=#0e0e0e #0e0e0e
-G09=#0e0e0e #0e0e0e
-G10=#0e0e0e #0e0e0e
-G11=#0e0e0e #0e0e0e
-G12=#0e0e0e #0e0e0e
+TC="$(tmux_get '@tmux_power_tc' '#ffaf00')" # tmux color
+FG="$(tmux_get '@tmux_power_fg' '#b8bb26')" # frontground color
+BG="$(tmux_get '@tmux_power_bg' '#0e3744')" # background color
+WC="$(tmux_get '@tmux_power_wc' '#0e0e0e')" # word color
 
-FG="#b8bb26"
-BG="#143e4d"
 
 # Status options
 tmux_set status-interval 1
@@ -97,34 +52,31 @@ tmux_set status-attr none
 tmux_set @prefix_highlight_fg "$BG"
 tmux_set @prefix_highlight_bg "$FG"
 tmux_set @prefix_highlight_show_copy_mode 'on'
-tmux_set @prefix_highlight_copy_mode_attr "fg=$TC,bg=$BG,bold"
-tmux_set @prefix_highlight_output_prefix "#[fg=$TC]#[bg=$BG]$larrow#[bg=$TC]#[fg=$BG]"
-tmux_set @prefix_highlight_output_suffix "#[fg=$TC]#[bg=$BG]$rarrow"
+tmux_set @prefix_highlight_copy_mode_attr "fg=$FG,bg=$BG,bold"
+tmux_set @prefix_highlight_output_prefix "#[fg=$FG]#[bg=$BG]$larrow#[bg=$FG]#[fg=$BG]"
+tmux_set @prefix_highlight_output_suffix "#[fg=$FG]#[bg=$BG]$rarrow"
 
 #     
 # Left side of status bar
-tmux_set status-left-bg "$G04"
-tmux_set status-left-fg "$G12"
-tmux_set status-left-length 200
+tmux_set status-left-bg "$BG"
+tmux_set status-left-fg "$FG"
+tmux_set status-left-length 150
 user=$(whoami)
-LS="#[fg=$G04,bg=$TC,bold] $user_icon $user #[fg=$TC,bg=$G06,nobold]$rarrow#[fg=$TC,bg=$G06] $session_icon #S "
-if "$show_upload_speed"; then
-    LS="$LS#[fg=$G06,bg=$G05]$rarrow#[fg=$TC,bg=$G05] $upload_speed_icon #{upload_speed} #[fg=$G05,bg=$BG]$rarrow"
-else
-    LS="$LS#[fg=$G06,bg=$BG]$rarrow"
-fi
+LS="#[fg=$WC,bg=$FG ,bold] $user_icon $user #[fg=$FG,bg=$BG]$rarrow#[fg=$BG,bg=$TC]$rarrow #[fg=$WC,bg=$TC] $session_icon #S #[fg=$TC,bg=$BG]$rarrow"
 if [[ $prefix_highlight_pos == 'L' || $prefix_highlight_pos == 'LR' ]]; then
     LS="$LS#{prefix_highlight}"
+
 fi
 tmux_set status-left "$LS"
 
 # Right side of status bar
 tmux_set status-right-bg "$BG"
-tmux_set status-right-fg "$G12"
-tmux_set status-right-length 200
-RS="#[fg=$G06]$larrow#[fg=$TC,bg=$G06] $time_icon $time_format #[fg=$TC,bg=$G06]$larrow#[fg=$G04,bg=$TC] $date_icon $date_format "
-if "$show_download_speed"; then
-    RS="#[fg=$FG,bg=$BG]$larrow#[fg=$BG,bg=$G05] $download_speed_icon #{download_speed} $RS"
+tmux_set status-right-fg "$FG"
+tmux_set status-right-length 150
+RS="#[fg=$BG,bg=$TC]$larrow#[fg=$FG,bg=$BG]$larrow#[fg=$WC,bg=$FG] $date_icon $date_format $time_icon $time_format #[fg=$FG]$larrow"
+
+if "$show_network_speed"; then
+    RS="#[fg=$TC,bg=$BG]$larrow#[fg=$WC,bg=$TC,bold] $upload_speed_icon#{upload_speed} $download_speed_icon#{download_speed} $RS"
 fi
 if "$show_web_reachable"; then
     RS=" #{web_reachable_status} $RS"
@@ -132,11 +84,12 @@ fi
 if [[ $prefix_highlight_pos == 'R' || $prefix_highlight_pos == 'LR' ]]; then
     RS="#{prefix_highlight}$RS"
 fi
+
 tmux_set status-right "$RS"
 
 # Window status format
-tmux_set window-status-format         "#[fg=$BG,bg=$G06]$rarrow#[fg=$TC,bg=$G06] #I:#W#F #[fg=$G06,bg=$BG]$rarrow"
-tmux_set window-status-current-format "#[fg=$BG,bg=$TC]$rarrow#[fg=$BG,bg=$TC,bold] #I:#W#F #[fg=$TC,bg=$BG,nobold]$rarrow"
+tmux_set window-status-format         "#[fg=$BG,bg=$TC]$rarrow#[fg=$WC,bg=$TC] #I:#W#F #[fg=$TC,bg=$BG]$rarrow"
+tmux_set window-status-current-format "#[fg=$BG,bg=$FG]$rarrow#[fg=$WC,bg=$FG,bold] #I:#W#F #[fg=$FG,bg=$BG,nobold]$rarrow"
 
 # Window status style
 tmux_set window-status-style          "fg=$TC,bg=$BG,none"
@@ -147,13 +100,13 @@ tmux_set window-status-activity-style "fg=$TC,bg=$BG,bold"
 tmux_set window-status-separator ""
 
 # Pane border
-tmux_set pane-border-style "fg=$G07,bg=default"
+tmux_set pane-border-style "fg=$FG,bg=default"
 
 # Active pane border
-tmux_set pane-active-border-style "fg=$TC,bg=default"
+tmux_set pane-active-border-style "fg=$FG,bg=default"
 
 # Pane number indicator
-tmux_set display-panes-colour "$G07"
+tmux_set display-panes-colour "$FG"
 tmux_set display-panes-active-colour "$TC"
 
 # Clock mode
@@ -167,4 +120,4 @@ tmux_set message-style "fg=$TC,bg=$BG"
 tmux_set message-command-style "fg=$TC,bg=$BG"
 
 # Copy mode highlight
-tmux_set mode-style "bg=$TC,fg=$FG"
+tmux_set mode-style "bg=$TC,fg=$BG"
