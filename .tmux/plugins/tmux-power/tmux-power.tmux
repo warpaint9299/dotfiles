@@ -104,9 +104,9 @@ tmux_set window-status-format         "#[fg=$BG,bg=$BG]$rarrow#[fg=$C3,bg=$BG] #
 tmux_set window-status-current-format "#[fg=$BG,bg=$C4]$rarrow#[fg=$C0,bg=$C4,bold] #I:#W#F #[fg=$C4,bg=$BG,nobold]$rarrow"
 
 # Window status style
-tmux_set window-status-style          "fg=$C0,bg=$TC,none"
-tmux_set window-status-last-style     "fg=$C0,bg=$TC,bold"
-tmux_set window-status-activity-style "fg=$C0,bg=$TC,bold"
+tmux_set window-status-style          ""
+tmux_set window-status-last-style     ""
+tmux_set window-status-activity-style ""
 
 # Window separator
 tmux_set window-status-separator ""
