@@ -1,3 +1,6 @@
-source $XDG_CONFIG_HOME/vim/config/options.vim
-source $XDG_CONFIG_HOME/vim/config/keymaps.vim
-source $XDG_CONFIG_HOME/vim/config/autocmds.vim
+vim9script
+
+import './config/options.vim'
+import './config/autocmds.vim'
+import './config/keymaps.vim'
+
