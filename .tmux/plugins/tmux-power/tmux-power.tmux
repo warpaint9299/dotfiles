@@ -112,24 +112,24 @@ tmux_set window-status-activity-style ""
 tmux_set window-status-separator ""
 
 # Pane border
-tmux_set pane-border-style "fg=default,bg=default"
+tmux_set pane-border-style "fg=$C0,bg=default"
 
 # Active pane border
-tmux_set pane-active-border-style "fg=$TC,bg=default"
+tmux_set pane-active-border-style "fg=$C1,bg=default"
 
 # Pane number indicator
 tmux_set display-panes-colour "default"
-tmux_set display-panes-active-colour "$TC"
+tmux_set display-panes-active-colour "$C2"
 
 # Clock mode
-tmux_set clock-mode-colour "$TC"
+tmux_set clock-mode-colour "$C3"
 tmux_set clock-mode-style 24
 
 # Message
-tmux_set message-style "fg=$TC,bg=$BG"
+tmux_set message-style "fg=$C4,bg=$BG"
 
 # Command message
-tmux_set message-command-style "fg=$TC,bg=$BG"
+tmux_set message-command-style "fg=$C5,bg=$BG"
 
 # Copy mode highlight
-tmux_set mode-style "fg=$C0,bg=$TC"
+tmux_set mode-style "fg=$C0,bg=$C1"
