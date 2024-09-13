@@ -1,6 +1,3 @@
-[submodule "wallpaper"]
-	path = wallpaper
-	url = git@github.com:warpaint9299/wallpaper.git
 [submodule ".wallpaper"]
 	path = .wallpaper
 	url = git@github.com:warpaint9299/wallpaper.git
@@ -16,6 +13,15 @@
 [submodule ".archlinux"]
 	path = .archlinux
 	url = git@github.com:warpaint9299/archlinux.git
-[submodule ".learning"]
-	path = .learning
-	url = git@github.com:warpaint9299/learning.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule ".tmux/plugins/tmux-sensible"]
+	path = .tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule ".tmux/plugins/extrakto"]
+	path = .tmux/plugins/extrakto
+	url = https://github.com/laktak/extrakto
+[submodule ".tmux/plugins/tmux-pain-control"]
+	path = .tmux/plugins/tmux-pain-control
+	url = https://github.com/tmux-plugins/tmux-pain-control
