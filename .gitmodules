@@ -1,27 +1,27 @@
 [submodule ".wallpaper"]
 	path = .wallpaper
-	url = git@github.com:warpaint9299/wallpaper.git
+	url = https://github.com:warpaint9299/wallpaper.git
 [submodule ".dwm"]
 	path = .dwm
-	url = git@github.com:warpaint9299/dwm-6.4.git
+	url = https://github.com:warpaint9299/dwm-6.4.git
 [submodule ".config/nvim"]
 	path = .config/nvim
-	url = git@github.com:warpaint9299/nvim-0.9.git
+	url = https://@github.com:warpaint9299/nvim-0.9.git
 [submodule ".st"]
 	path = .st
-	url = git@github.com:warpaint9299/st-0.9.git
+	url = https://github.com:warpaint9299/st-0.9.git
 [submodule ".archlinux"]
 	path = .archlinux
-	url = git@github.com:warpaint9299/archlinux.git
+	url = https://github.com:warpaint9299/archlinux.git
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
 [submodule ".tmux/plugins/extrakto"]
 	path = .tmux/plugins/extrakto
-	url = https://github.com/laktak/extrakto
+	url = https://github.com/laktak/extrakto.git
 [submodule ".tmux/plugins/tmux-pain-control"]
 	path = .tmux/plugins/tmux-pain-control
-	url = https://github.com/tmux-plugins/tmux-pain-control
+	url = https://github.com/tmux-plugins/tmux-pain-control.git
