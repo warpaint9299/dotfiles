@@ -119,10 +119,12 @@ ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
+if [[ -n "$DISPLAY" ]]; then
+  setxkbmap -option ctrl:nocaps
+fi
 
-# mv ./^folder1 folder1  =>  move all of directory or file except one 
+# mv ./^folder1 folder1  =>  move all of directory or file except one
 setopt extended_glob
-setxkbmap -option ctrl:nocaps
 POWERLINE_PATH="short"
 POWERLINE_DISABLE_RPROMPT="true"
 POWERLINE_NO_BLANK_LINE=""
