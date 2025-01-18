@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
@@ -110,16 +110,15 @@ alias zshconfig='mate ~/.zshrc'
 alias ohmyzsh='mate ~/.oh-my-zsh'
 alias vim='nvim'
 alias vi='nvim'
-alias docker='sudo docker'
 
-# export DOCKER_HOST=unix:///run/user/1000/docker.sock
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export _JAVA_AWT_WM_NONREPARENTING=1
 export EDITOR=nvim
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
-if [[ -n "$DISPLAY" ]]; then
+if [[ -n "$DISPLAY" && "wayland" -ne "$XDG_SESSION_TYPE" ]]; then
   setxkbmap -option ctrl:nocaps
 fi
 
