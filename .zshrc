@@ -108,8 +108,8 @@ export ARCHFLAGS="-arch x86_64"
 #
 alias zshconfig='mate ~/.zshrc'
 alias ohmyzsh='mate ~/.oh-my-zsh'
-alias vim='nvim'
 alias vi='nvim'
+alias vim='nvim'
 
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export _JAVA_AWT_WM_NONREPARENTING=1

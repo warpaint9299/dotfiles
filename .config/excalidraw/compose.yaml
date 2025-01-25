@@ -1,0 +1,23 @@
+name: "excalidraw" # Docker Compose Project Name.
+services:
+  "excalidraw":
+    image: excalidraw/excalidraw:latest
+    container_name: Excalidraw
+    environment:
+      - NODE_ENV=production
+    privileged: false
+    ports:
+      - 5000:80
+    restart: on-failure
+    stdin_open: true
+    healthcheck:
+      disable: true
+    networks:
+      - virbridge
+
+volumes:
+  notused:
+
+networks:
+  virbridge:
+    driver: bridge

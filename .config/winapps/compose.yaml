@@ -22,7 +22,11 @@ services:
       USERNAME: "Admin" # Edit here to set a custom Windows username. The default is 'MyWindowsUser'.
       PASSWORD: "final." # Edit here to set a password for the Windows user. The default is 'MyWindowsPassword'.
       HOME: "${HOME}" # Set path to Linux user home folder.
-      USB: "qemu-xhci,id=usb --device usb-host,hostbus=2,hostaddr=2" # To use `lsusb` command show Bus and Device infomation
+      # NOTE :
+      # Use the `lsusb` command for showing Bus and Device infomation
+      # Use this information to place the values of `hostbus` and `hostaddr`
+      # Start the container after executing `sudo chmod 666 /dev/bus/usb/00[usb-host_value]/00[hostaddr_value]`
+      USB: "qemu-xhci,id=usb --device usb-host,hostbus=2,hostaddr=2"
     privileged: true # Grant the Windows VM extended privileges.
     ports:
       - 8006:8006 # Map '8006' on Linux host to '8006' on Windows VM --> For VNC Web Interface @ http://127.0.0.1:8006.
@@ -35,9 +39,15 @@ services:
       - ${HOME}/Downloads:/shared # Mount Linux user home directory @ '\\host.lan\Data'.
       #- /path/to/second/hard/disk:/storage2 # Uncomment to mount the second hard disk within the Windows VM. Ensure 'DISK2_SIZE' is specified above.
       - ./oem:/oem # Enables automatic post-install execution of 'oem/install.bat', applying Windows registry modifications contained within 'oem/RDPApps.reg'.
-      # - ${HOME}/VirtualBoxVMs/iso/TinyWin11_x64.iso:/custom.iso # Uncomment to use a custom Windows ISO. If specified, 'VERSION' (e.g. 'tiny11') will be ignored.
+      - ${HOME}/VirtualBoxVMs/iso/TinyWin11_x64.iso:/custom.iso # Uncomment to use a custom Windows ISO. If specified, 'VERSION' (e.g. 'tiny11') will be ignored.
     devices:
       - /dev/kvm # Enable KVM.
       - /dev/bus/usb:/dev/bus/usb
       #- /dev/sdX:/disk1 # Uncomment to mount a disk directly within the Windows VM (Note: 'disk1' will be mounted as the main drive. THIS DISK WILL BE FORMATTED BY DOCKER).
       #- /dev/sdY:/disk2 # Uncomment to mount a disk directly within the Windows VM (Note: 'disk2' and higher will be mounted as secondary drives. THIS DISK WILL NOT BE FORMATTED).
+    networks:
+      - virbridge
+
+networks:
+  virbridge:
+    driver: bridge

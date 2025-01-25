@@ -1,6 +1,6 @@
 vim9script
 
-import './config/options.vim'
-import './config/autocmds.vim'
-import './config/keymaps.vim'
+import '~/.config/vim/config/options.vim'
+import '~/.config/vim/config/autocmds.vim'
+import '~/.config/vim/config/keymaps.vim'
 

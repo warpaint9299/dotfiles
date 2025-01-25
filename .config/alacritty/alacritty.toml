@@ -1,4 +1,4 @@
-import = [
+general.import = [
     "/usr/share/alacritty/themes/pastel_dark.toml"
 ]
 
@@ -25,7 +25,7 @@ normal = { family = "Comic Code", style = "Regular" }
 italic = { family = "Comic Code", style = "Italic" }
 bold = { family = "Comic Code", style = "Bold" }
 size = 16
-builtin_box_drawing = true 
+builtin_box_drawing = true
 
 [cursor]
 # Block Underline | Beam

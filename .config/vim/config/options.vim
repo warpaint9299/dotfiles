@@ -34,7 +34,7 @@ set foldlevel=3
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 set virtualedit=
 set fileencodings=ucs-bom,utf-8,gb18030,cp936,latin1"
 set foldmethod=manual
