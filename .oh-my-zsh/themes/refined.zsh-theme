@@ -57,25 +57,25 @@ repo_information() {
 cmd_exec_time() {
     local stop=`date +%s`
     local start=${cmd_timestamp:-$stop}
-    let local elapsed=$stop-$start
-	if [[ $(($elapsed / 3600 )) -gt 0 ]]; then
-		let local hour=$(( ${elapsed} / 3600 ))
-		let local minute=$(( ${elapsed} % 3600 / 60 ))
-		let local second=$(( ${elapsed} % 3600 % 60 ))
+    let local elapsed=`echo "${stop}-${start}" | bc`
+	if [[ `echo "${elapsed} / 3600" | bc` -gt 0 ]]; then
+		let local hour=`echo "${elapsed} / 3600" | bc`
+		let local minute=`echo "${elapsed} % 3600 / 60" | bc`
+		let local second=`echo "${elapsed} % 3600 % 60" | bc`
 		if [[ ${second} -ge 10 ]]; then
 			echo ${hour}h,${minute}m${second}s
 		else
 			echo ${hour}h,${minute}m0${second}s
 		fi
-	elif [[ $(($elapsed / 60 )) -gt 0 ]]; then
-		let local minute=$(( ${elapsed} / 60 ))
-		let local second=$(( ${elapsed} % 60 ))
+	elif [[ `echo "${elapsed} / 60" | bc` -gt 0 ]]; then
+		let local minute=`echo "${elapsed} / 60" | bc`
+		let local second=`echo "${elapsed} % 60" | bc`
 		if [[ ${second} -ge 10 ]]; then
 			echo ${minute}m${second}s
 		else
 			echo ${minute}m0${second}s
 		fi
-	elif [[ $elapsed -gt 5 ]]; then
+	elif [[ ${elapsed} -gt 5 ]]; then
 		echo ${elapsed}s
 	fi
 }

@@ -26,7 +26,7 @@ services:
       # Use the `lsusb` command for showing Bus and Device infomation
       # Use this information to place the values of `hostbus` and `hostaddr`
       # Start the container after executing `sudo chmod 666 /dev/bus/usb/00[usb-host_value]/00[hostaddr_value]`
-      USB: "qemu-xhci,id=usb --device usb-host,hostbus=2,hostaddr=2"
+      ARGUMENTS: "--device usb-host,hostbus=2,hostaddr=2"
     privileged: true # Grant the Windows VM extended privileges.
     ports:
       - 8006:8006 # Map '8006' on Linux host to '8006' on Windows VM --> For VNC Web Interface @ http://127.0.0.1:8006.
