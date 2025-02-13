@@ -59,16 +59,11 @@
     </property>
     <property name="plugin-3" type="string" value="systray">
       <property name="known-legacy-items" type="array">
-        <value type="string" value="yesplaymusic"/>
-        <value type="string" value="vmware-tray"/>
-        <value type="string" value="fcitx5 tray window"/>
       </property>
       <property name="known-items" type="array">
-        <value type="string" value="1"/>
         <value type="string" value="steam"/>
-        <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="chrome_status_icon_1"/>
-        <value type="string" value="yesplaymusic1"/>
+        <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="blueman"/>
         <value type="string" value="Fcitx"/>
       </property>
@@ -80,15 +75,11 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="hidden-items" type="array">
         <value type="string" value="chrome_status_icon_1"/>
-        <value type="string" value="steam"/>
-        <value type="string" value="yesplaymusic1"/>
-        <value type="string" value="blueman"/>
         <value type="string" value="GoldenDict-ng"/>
-        <value type="string" value="1"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="steam"/>
       </property>
       <property name="hidden-legacy-items" type="array">
-        <value type="string" value="vmware-tray"/>
-        <value type="string" value="yesplaymusic"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="separator">
@@ -103,7 +94,7 @@
     <property name="plugin-7" type="string" value="power-manager-plugin"/>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value=";Brave;firefox-esr"/>
+      <property name="known-players" type="string" value=";Brave;firefox-esr;GoldenDict-ng"/>
     </property>
     <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
