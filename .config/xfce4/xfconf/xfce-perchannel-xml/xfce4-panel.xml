@@ -26,6 +26,7 @@
         <value type="int" value="2"/>
         <value type="int" value="1"/>
         <value type="int" value="12"/>
+        <value type="int" value="19"/>
         <value type="int" value="3"/>
         <value type="int" value="13"/>
         <value type="int" value="11"/>
@@ -62,6 +63,7 @@
         <value type="string" value="flameshot"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="autokey-qt"/>
         <value type="string" value="Screenkey"/>
         <value type="string" value="steam"/>
         <value type="string" value="chrome_status_icon_1"/>
@@ -79,6 +81,7 @@
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="blueman"/>
+        <value type="string" value="autokey-qt"/>
         <value type="string" value="Screenkey"/>
         <value type="string" value="steam"/>
       </property>
@@ -145,6 +148,16 @@
     <property name="plugin-14" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-19" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17403711611.desktop"/>
+        <value type="string" value="17403716285.desktop"/>
+        <value type="string" value="17403942451.desktop"/>
+        <value type="string" value="17403831401.desktop"/>
+        <value type="string" value="17403716174.desktop"/>
+        <value type="string" value="17403713613.desktop"/>
+      </property>
     </property>
   </property>
 </channel>

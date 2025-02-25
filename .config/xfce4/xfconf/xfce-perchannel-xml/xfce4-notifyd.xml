@@ -4,8 +4,10 @@
   <property name="log-max-size-enabled" type="bool" value="true"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="autokey-qt"/>
       <value type="string" value="blueman"/>
       <value type="string" value="flameshot"/>
+      <value type="string" value="Input Method"/>
       <value type="string" value="Portmaster"/>
       <value type="string" value="WinApps"/>
       <value type="string" value="Xfce volume control"/>

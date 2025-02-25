@@ -1,0 +1,19 @@
+[Unit]
+Description= a keyboard remapping tool for X environment
+After=display-manager.service
+Wants=display-manager.service
+
+[Service]
+Environment=CONFIG_FILE=/home/warpaint/.config/xkeysnail/config.py
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/warpaint/.Xauthority
+ExecStart=/usr/bin/xkeysnail $CONFIG_FILE
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGKILL
+MemoryLimit=24M
+MemoryHigh=20M
+MemoryMax=30M
+
+[Install]
+WantedBy=graphical.target
