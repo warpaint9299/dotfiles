@@ -63,6 +63,7 @@
         <value type="string" value="flameshot"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="yesplaymusic1"/>
         <value type="string" value="autokey-qt"/>
         <value type="string" value="Screenkey"/>
         <value type="string" value="steam"/>
@@ -80,6 +81,7 @@
       <property name="hidden-items" type="array">
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="GoldenDict-ng"/>
+        <value type="string" value="yesplaymusic1"/>
         <value type="string" value="blueman"/>
         <value type="string" value="autokey-qt"/>
         <value type="string" value="Screenkey"/>
