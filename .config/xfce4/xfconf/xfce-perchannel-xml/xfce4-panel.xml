@@ -18,6 +18,8 @@
       </property>
       <property name="plugin-ids" type="array">
         <value type="int" value="14"/>
+        <value type="int" value="20"/>
+        <value type="int" value="21"/>
         <value type="int" value="8"/>
         <value type="int" value="15"/>
         <value type="int" value="17"/>
@@ -60,9 +62,17 @@
     </property>
     <property name="plugin-3" type="string" value="systray">
       <property name="known-legacy-items" type="array">
+        <value type="string" value="fcitx5 tray window"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="flameshot"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="Digital Clock"/>
+        <value type="string" value="ksnip"/>
+        <value type="string" value="app.py"/>
+        <value type="string" value="qv2ray"/>
+        <value type="string" value="Please check the server settings first"/>
         <value type="string" value="yesplaymusic1"/>
         <value type="string" value="autokey-qt"/>
         <value type="string" value="Screenkey"/>
@@ -79,15 +89,23 @@
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="icon-size" type="int" value="0"/>
       <property name="hidden-items" type="array">
-        <value type="string" value="chrome_status_icon_1"/>
-        <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="yesplaymusic1"/>
         <value type="string" value="blueman"/>
-        <value type="string" value="autokey-qt"/>
-        <value type="string" value="Screenkey"/>
+        <value type="string" value="GoldenDict-ng"/>
+        <value type="string" value="qv2ray"/>
+        <value type="string" value="ksnip"/>
         <value type="string" value="steam"/>
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="Please check the server settings first"/>
+        <value type="string" value="Digital Clock"/>
+        <value type="string" value="Screenkey"/>
+        <value type="string" value="app.py"/>
+        <value type="string" value="autokey-qt"/>
       </property>
       <property name="hidden-legacy-items" type="array">
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="fcitx5 tray window"/>
         <value type="string" value="flameshot"/>
       </property>
     </property>
@@ -154,12 +172,22 @@
     <property name="plugin-19" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17403711611.desktop"/>
+        <value type="string" value="17418518123.desktop"/>
+        <value type="string" value="17418517811.desktop"/>
         <value type="string" value="17403716285.desktop"/>
         <value type="string" value="17403942451.desktop"/>
         <value type="string" value="17403831401.desktop"/>
         <value type="string" value="17403716174.desktop"/>
         <value type="string" value="17403713613.desktop"/>
       </property>
+    </property>
+    <property name="plugin-21" type="string" value="eyes"/>
+    <property name="plugin-20" type="string" value="applicationsmenu">
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="show-menu-icons" type="bool" value="false"/>
+      <property name="show-generic-names" type="bool" value="false"/>
+      <property name="small" type="bool" value="true"/>
+      <property name="button-icon" type="string" value="application-x-vmware-easter-egg"/>
     </property>
   </property>
 </channel>

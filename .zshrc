@@ -110,6 +110,9 @@ alias zshconfig='mate ~/.zshrc'
 alias ohmyzsh='mate ~/.oh-my-zsh'
 alias vi='nvim'
 alias vim='nvim'
+alias transtz='trans -b -e bing :zh'
+alias transte='trans -b -e bing :en'
+alias gufw='sudo /usr/bin/gufw'
 
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export _JAVA_AWT_WM_NONREPARENTING=1
