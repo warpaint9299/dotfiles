@@ -6,7 +6,7 @@
     <value type="int" value="1"/>
     <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=0;x=5000;y=0"/>
+      <property name="position" type="string" value="p=0;x=1920;y=0"/>
       <property name="size" type="uint" value="32"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="background-style" type="uint" value="1"/>
@@ -43,7 +43,11 @@
       <property name="enable-struts" type="bool" value="true"/>
       <property name="length" type="double" value="1"/>
       <property name="length-adjust" type="bool" value="true"/>
-      <property name="output-name" type="string" value="eDP"/>
+      <property name="output-name" type="string" value="Primary"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="span-monitors" type="bool" value="false"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="nrows" type="uint" value="1"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -62,21 +66,15 @@
     </property>
     <property name="plugin-3" type="string" value="systray">
       <property name="known-legacy-items" type="array">
-        <value type="string" value="fcitx5 tray window"/>
         <value type="string" value="blueman"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="flameshot"/>
+        <value type="string" value="clash"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="fcitx5 tray window"/>
+        <value type="string" value="vmware-tray"/>
       </property>
       <property name="known-items" type="array">
-        <value type="string" value="Digital Clock"/>
-        <value type="string" value="ksnip"/>
-        <value type="string" value="app.py"/>
-        <value type="string" value="qv2ray"/>
-        <value type="string" value="Please check the server settings first"/>
-        <value type="string" value="yesplaymusic1"/>
-        <value type="string" value="autokey-qt"/>
+        <value type="string" value="GoldenDict"/>
         <value type="string" value="Screenkey"/>
-        <value type="string" value="steam"/>
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="blueman"/>
@@ -89,24 +87,18 @@
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="icon-size" type="int" value="0"/>
       <property name="hidden-items" type="array">
-        <value type="string" value="yesplaymusic1"/>
-        <value type="string" value="blueman"/>
-        <value type="string" value="GoldenDict-ng"/>
-        <value type="string" value="qv2ray"/>
-        <value type="string" value="ksnip"/>
-        <value type="string" value="steam"/>
         <value type="string" value="chrome_status_icon_1"/>
-        <value type="string" value="Please check the server settings first"/>
-        <value type="string" value="Digital Clock"/>
+        <value type="string" value="GoldenDict-ng"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="GoldenDict"/>
         <value type="string" value="Screenkey"/>
-        <value type="string" value="app.py"/>
-        <value type="string" value="autokey-qt"/>
       </property>
       <property name="hidden-legacy-items" type="array">
-        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="vmware-tray"/>
+        <value type="string" value="blueman-tray"/>
         <value type="string" value="blueman"/>
         <value type="string" value="fcitx5 tray window"/>
-        <value type="string" value="flameshot"/>
+        <value type="string" value="clash"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="separator">
@@ -121,9 +113,11 @@
     <property name="plugin-7" type="string" value="power-manager-plugin"/>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value=";Brave;firefox-esr;GoldenDict-ng"/>
-      <property name="show-notifications" type="uint" value="0"/>
+      <property name="known-players" type="string" value=";Brave;Chromium;firefox-esr;GoldenDict-ng"/>
+      <property name="show-notifications" type="uint" value="1"/>
       <property name="play-sound" type="bool" value="true"/>
+      <property name="multimedia-keys-to-all" type="bool" value="true"/>
+      <property name="enable-wnck" type="bool" value="true"/>
     </property>
     <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -172,14 +166,18 @@
     <property name="plugin-19" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17403711611.desktop"/>
-        <value type="string" value="17418518123.desktop"/>
-        <value type="string" value="17418517811.desktop"/>
+        <value type="string" value="17424561971.desktop"/>
+        <value type="string" value="17424745771.desktop"/>
         <value type="string" value="17403716285.desktop"/>
         <value type="string" value="17403942451.desktop"/>
         <value type="string" value="17403831401.desktop"/>
         <value type="string" value="17403716174.desktop"/>
         <value type="string" value="17403713613.desktop"/>
       </property>
+      <property name="show-label" type="bool" value="false"/>
+      <property name="move-first" type="bool" value="false"/>
+      <property name="arrow-position" type="uint" value="0"/>
+      <property name="disable-tooltips" type="bool" value="false"/>
     </property>
     <property name="plugin-21" type="string" value="eyes"/>
     <property name="plugin-20" type="string" value="applicationsmenu">

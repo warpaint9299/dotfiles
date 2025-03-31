@@ -7,7 +7,9 @@
       <value type="string" value="app.py"/>
       <value type="string" value="autokey-qt"/>
       <value type="string" value="blueman"/>
+      <value type="string" value="brave-browser"/>
       <value type="string" value="Digital Clock"/>
+      <value type="string" value="Firefox"/>
       <value type="string" value="flameshot"/>
       <value type="string" value="Input Method"/>
       <value type="string" value="NormCap"/>
@@ -16,6 +18,7 @@
       <value type="string" value="org.kde.kclockd"/>
       <value type="string" value="Portmaster"/>
       <value type="string" value="qv2ray"/>
+      <value type="string" value="Waterfox"/>
       <value type="string" value="WinApps"/>
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="xfce4-power-manager"/>
