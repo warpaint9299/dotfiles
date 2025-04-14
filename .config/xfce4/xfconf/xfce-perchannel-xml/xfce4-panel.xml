@@ -89,7 +89,6 @@
       <property name="icon-size" type="int" value="0"/>
       <property name="hidden-items" type="array">
         <value type="string" value="chrome_status_icon_1"/>
-        <value type="string" value="GoldenDict-ng"/>
         <value type="string" value="blueman"/>
         <value type="string" value="GoldenDict"/>
         <value type="string" value="Screenkey"/>
@@ -100,7 +99,6 @@
         <value type="string" value="blueman"/>
         <value type="string" value="fcitx5 tray window"/>
         <value type="string" value="clash"/>
-        <value type="string" value="goldendict-ng"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="separator">
@@ -167,14 +165,8 @@
     </property>
     <property name="plugin-19" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17403711611.desktop"/>
-        <value type="string" value="17424561971.desktop"/>
-        <value type="string" value="17424745771.desktop"/>
-        <value type="string" value="17403716285.desktop"/>
-        <value type="string" value="17403942451.desktop"/>
-        <value type="string" value="17403831401.desktop"/>
-        <value type="string" value="17403716174.desktop"/>
-        <value type="string" value="17403713613.desktop"/>
+        <value type="string" value="17446411812.desktop"/>
+        <value type="string" value="17446372961.desktop"/>
       </property>
       <property name="show-label" type="bool" value="false"/>
       <property name="move-first" type="bool" value="false"/>
