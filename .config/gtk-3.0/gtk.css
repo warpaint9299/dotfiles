@@ -1,0 +1,10 @@
+window,
+.dialog,
+.button,
+.entry,
+.textview,
+.headerbar,
+.sidebar,
+.popover {
+  border-radius: 0;
+}
