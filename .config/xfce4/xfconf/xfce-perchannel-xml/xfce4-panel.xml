@@ -74,6 +74,11 @@
         <value type="string" value="vmware-tray"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="RFCS2I4Fco"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="obs"/>
+        <value type="string" value="VgoSfa894_"/>
+        <value type="string" value="KDE Connect Indicator"/>
         <value type="string" value="GoldenDict"/>
         <value type="string" value="Screenkey"/>
         <value type="string" value="chrome_status_icon_1"/>
@@ -88,10 +93,15 @@
       <property name="symbolic-icons" type="bool" value="true"/>
       <property name="icon-size" type="int" value="0"/>
       <property name="hidden-items" type="array">
-        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="blueman"/>
-        <value type="string" value="GoldenDict"/>
+        <value type="string" value="VgoSfa894_"/>
+        <value type="string" value="KDE Connect Indicator"/>
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="RFCS2I4Fco"/>
+        <value type="string" value="vlc"/>
         <value type="string" value="Screenkey"/>
+        <value type="string" value="GoldenDict"/>
+        <value type="string" value="obs"/>
       </property>
       <property name="hidden-legacy-items" type="array">
         <value type="string" value="vmware-tray"/>
@@ -113,7 +123,7 @@
     <property name="plugin-7" type="string" value="power-manager-plugin"/>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value=";Brave;Chromium;firefox-esr;GoldenDict-ng"/>
+      <property name="known-players" type="string" value=";Brave;Chromium;firefox-esr;GoldenDict-ng;vlc"/>
       <property name="show-notifications" type="uint" value="1"/>
       <property name="play-sound" type="bool" value="true"/>
       <property name="multimedia-keys-to-all" type="bool" value="true"/>
@@ -166,6 +176,7 @@
     <property name="plugin-19" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17446411812.desktop"/>
+        <value type="string" value="17459067801.desktop"/>
         <value type="string" value="17446372961.desktop"/>
       </property>
       <property name="show-label" type="bool" value="false"/>

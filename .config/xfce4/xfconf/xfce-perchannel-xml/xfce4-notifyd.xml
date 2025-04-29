@@ -16,6 +16,7 @@
       <value type="string" value="notify-send"/>
       <value type="string" value="org.gnome.clocks"/>
       <value type="string" value="org.kde.kclockd"/>
+      <value type="string" value="org.kde.kdeconnect.daemon"/>
       <value type="string" value="Portmaster"/>
       <value type="string" value="qv2ray"/>
       <value type="string" value="Waterfox"/>
